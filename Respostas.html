@@ -1,141 +1,0 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulário HTML - PW</title>
-    <style>
-        body {
-            background-color: rgb(2, 58, 54);
-            
-        }
-            p  {
-                color: rgb(202, 204, 198);
-                font-size: 16px;
-                margin-bottom: 1.5em;
-                line-height: 1.4em;
-            }
-            h1 {
-                text-align: center;
-                font-size: 200%;
-                color: rgb(189, 210, 228);
-                background-color: rgb(5, 38, 131);
-                display: block;
-                margin: auto;
-            }
-            
-            h2, h3 {
-                color: antiquewhite;
-                text-align: center;
-            }
-            .h3 {
-                color: rgb(12, 157, 241);
-                text-align: left;
-                text-decoration: double;
-                text-underline-position: above;
-            }
-        .pergunta {
-            font-weight: bold;
-            font-size: 18px;
-        }
-        .resposta {
-            font-family:'Times New Roman', Times, serif;
-            font-weight: lighter;
-        }
-
-    </style>
-</head>
-
-<body>
-    <h1>FORMULÁRIO HTML</h1>
-
-    <h2>Trabalho de Padrões Web</h2>
-
-    <h3 class="h3">Grupo:</h3>
-    <p class="h3">LIDIARD NUNES DE OLIVEIRA</p>
-    <P class="h3">GUSTAVO</P>
-    <P class="h3">MARCELLE</P>
-    <P class="h3">DANIELA BELO</P>
-    <P class="h3">MARIA EZÍDIA</P><br><br><br>
-
-    <div>
-        <h3><strong>Questionário sobre formulários HTML</strong></h3><br>
-
-        <p class="pergunta">a) Na tag &lt;input&gt; com atributo type="text", para que serve o atributo "placeholder"?
-            <p class="resposta">Resposta: O atributo placeholder, neste contexto, serve para indicar o tipo de valor (uma palavra ou uma
-                pequena frase), o qual se espera que o usuário preencha no campo de texto do formulário.</p>
-
-        <p class="pergunta">b) Na tag &lt;input&gt; com atributo type="radio" ou type="radio", para que serve o atributo "checked"?
-            <p class="resposta">Resposta: O atributo checked, neste contexto, serve para marcar ou desmarcar o referido botão radio.</p>
-
-        <p class="pergunta">c) Na tag &lt;input&gt; para que serve o atributo "value"?<br>
-            <p class="resposta">Resposta: O atributo value serve para especificar o valor de um elemento &lt;input&gt;. Para tipos
-                diferentes de &lt;input&gt;, o atributo value é usado de maneiras diferentes. No caso de button, reset
-                e submit, o value serve para definir o texto que aparecerá no botão. No caso de text, password e
-                hidden, value determina o valor inicial padrão para o tipo de &lt;input&gt;. No caso de checkbox,
-                radio e image, value define o valor associado com a informação fornecida pelo usuário, valor que
-                também será o enviado quando da conclusão do formulário.</p>
-
-        <p class="pergunta">d) Que atributo deve ser utilizado para agrupar vários botões de rádio em um formulário de modo que apenas um
-            deles fique marcado de cada vez? <br>
-            <p class="resposta">Resposta: Para agrupar botões de rádio e permitir a seleção de apenas uma opção por vez, deve-se utilizar o
-                atributo name. Para tanto, todos os botões de rádio que se deseja agrupar devem possuir o mesmo valor
-                associado ao atributo name, ou seja, cada grupo deve possuir seu próprio nome.</p>
-
-        <p class="pergunta">e) Para que serve a tag &lt;label&gt;? Para que serve o atributo "for" nessa tag? <br>
-            <p class="resposta">Resposta: A tag &lt;label&gt; define o rótulo de vários elementos. Sua aplicação beneficia usuários de
-                softwares de leitura de tela, fazendo a leitura dos rótulos. Beneficia também usuários com dificuldade de
-                clicar em espaços pequenos. Por sua vez, o atributo "for", quando utilizado em conjunto com a tag
-                &lt;label&gt;, serve para especificar a qual elemento do formulário o rótulo &lt;label&gt; deve estar
-                associado. O valor do atributo "for" deve corresponder ao valor do atributo "id" do elemento que se deseja
-                associar ao rótulo.</p>
-
-        <p class="pergunta">f) Na tag &lt;option&gt; para que serve o atributo "selected"? <br>
-            <p class="resposta">Resposta: O atributo selected serve para pré-selecionar uma, dentre as várias opções ofertadas pela tag
-                &lt;option&gt;. A opção pré-selecionada aparecerá destacada ao carregar a página web.</p>
-
-        <p class="pergunta">g) Nas tags de formulário para que serve o atributo "required"? <br>
-            <p class="resposta">Resposta: O atributo required serve para especificar um campo &lt;input&gt; de entrada obrigatória antes
-                do envio do formulário.</p>
-
-        <p class="pergunta">h) Na tag &lt;form&gt; para que serve o atributo "action"? <br>
-            <p class="resposta">Resposta: O atributo action serve para especificar para onde os dados do formulário deverão ser enviados
-                quando o usuário completá-lo.</p>
-        
-        <p class="pergunta">i) Na tag &lt;form&gt; para que serve o atributo "method"? Quais são os valores possíveis desse atributo?
-            <br>
-            <p class="resposta">Resposta: O atributo method serve para determinar como os dados fornecidos pelo usuário, no formulário,
-                devem ser enviados. Para tanto, os valores possíveis para method são get (method=get), no qual os
-                dados são enviados como variáveis URL, e post (method=post), no qual os dados são enviados como uma
-                transação HTTP. No caso do envio por get, ele deve ser preterido em caso de informações sensíveis, além de
-                possuir limitação quanto ao tamanho do URL (3000 caracteres). No caso de envio por post, não há limitação
-                de tamanho e há maior proteção quanto à privacidade dos dados enviados.</p>
-
-        <p class="pergunta">j) Para que o valor digitado de uma senha não apareça na barra de endereços do navegador, qual deve ser o
-            valor do atributo "method" na tag &lt;form&gt;? <br>
-            <p class="resposta">Resposta: Para que o valor digitado no formulário não apareça na barra de endereços do navegador, deve-se
-                utilizar o atributo method com o valor post (method=post).</p>
-
-        <p class="pergunta">k) Qual valor deve ser informado no atributo "method" na tag &lt;form&gt; em um formulário que será usado
-            para fazer upload de arquivos? <br>
-            <p class="resposta">Resposta: No formulário que será utilizado para o envio de arquivos, deve-se utilizar o valor post para o
-                atributo method (method=post), haja vista a inexistência de limitações quanto ao tamanho dos dados
-                enviados.</p>
-
-        <p class="pergunta">l) O que as tags &lt;fieldset&gt; e &lt;legend&gt; produzem? <br>
-            <p class="resposta">Resposta: A tag &lt;fielset&gt; é utilizada para agrupar elementos em um formulário, construindo uma caixa
-                ao seu redor. A tag &lt;legend&gt;, por sua vez, define a legenda dos elementos agrupados pela tag
-                &lt;fieldset&gt;.</p>
-        <p><a href="https://www.w3schools.com/html/html_forms.asp" style="color: black;">Referências bibliográficas</a></p>
-
-
-    </div>
-
-    <button id="button1" onclick="document.location='formulario1.html'">Acessar Formulário HTML 1</button>
-    <button id="button1" onclick="document.location='formulario2.html'">Acessar Formulário HTML 2</button>
-
-</body>
-
-</html>
