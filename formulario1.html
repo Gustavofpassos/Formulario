@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário HTML</title>
+    <style>
+        form {
+            margin: auto;
+            color: #f8efef;
+            width: 450px;
+            padding: 1em;
+            border: 5px solid rgb(243, 113, 113);
+            border-radius: 1em;
+        }
+
+        label {
+            display: inline-block;
+            width: 80px;
+            text-align: left;
+        }
+
+        input,
+        textarea {
+            font: 1em sans-serif;
+            width: 300px;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            border: 1px solid #f8efef;
+        }
+        #sexo {
+            font: 0.9em sans-serif;
+            width: 100px;
+            margin:auto;
+            display:inline-flex;
+            width: 10px;
+            text-align:end;
+        }
+        body {
+            background-color: rgb(67, 115, 139);
+        }
+                       
+    </style>
+</head>
+
+<body class="body">
+
+    <h2 style="text-align: center;">FORMULÁRIO HTML - PADRÕES WEB</h2>
+
+        <form action="/action_page.php" target="_self" method="post" autocomplete="on">
+            <label for="fname">Nome:</label>
+            <input type="text" id="fname" name="fname" value=""><br><br>
+            <label for="diaa">Data de nascimento:</label>
+            <input type="date" id="diaa" name="diaa"><br><br>
+          
+            <div id="sexo">
+            <legend>Sexo:</legend>        
+                <input type="radio" id="html" name="fav_sex" value="Masc">
+                <label for="html">Masc</label>
+                <input type="radio" id="html" name="fav_sex" value="fem">
+                <label for="html">Fem</label>
+                <input type="radio" id="html" name="fav_sex" value="pref">
+                <label for="html">Prefiro não responder</label>
+            </div>
+
+                <form>
+                    <p>Endereço:</p>
+                    <label for="fname">Logradouro</label>
+                    <input type="text" id="fname" name="fname" value=""><br><br>
+                    <label for="fname">Bairro</label>
+                    <input type="text" id="fname" name="fname" value=""><br><br>
+                    <label for="fname">Cidade</label>
+                    <input type="text" id="fname" name="fname" value=""><br><br>
+
+                    <label for="uf">UF:</label>
+                    <select name="uf" id="uf">
+                        <option value="df">DF</option>
+                        <option value="mg">MG</option>
+                        <option value="rj">RJ</option>
+                        <option value="am">AM</option>
+                        <option value="pr">PR</option>
+                    </select>
+                    <br><br>
+                    
+                    
+                    <label for="fname">E-mail:</label>
+                    <input type="text" id="fname" name="fname" value="" placeholder="digite seu e-mail aqui"><br><br>
+            
+                    <button type="reset" onclick="Limpar">Limpar</button>
+                    <button type="submit" onclick="Limpar">Enviar</button>
+                    
+
+                    
+
+                </form>
+
+                <a href="index.html"><img src="voltar.png" alt="voltar" width="30" height="30"></a></a>
+
+    
+
+
+</body>
+
+</html>

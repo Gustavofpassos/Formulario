@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário HTML II</title>
+    <style>
+        fieldset {
+            margin-right: auto;
+            width: 550px;
+            padding: 1em;
+            border: 5px solid rgb(243, 113, 113);
+            border-radius: 1em;
+            font: 1.1em arial;
+            
+        }
+
+        label {
+            display:inline-block;
+            width: 92px;
+            text-align:initial;
+            border-bottom: #999;
+        }
+
+        input {
+            font: 1em sans-serif;
+            width: 400px;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            border: 1px solid #999;
+            text-align: justify;
+        }
+        #semestre {
+            font: 1.1em arial;
+            width: 100px;
+            margin:inherit;
+            display:inline-flex;
+            width: 25px;
+            text-align:end;
+        }
+        .button {
+            border-radius: 0%;
+            border: none;
+            color: #beaeae;
+            padding: 5px 10px;
+            cursor: pointer;
+            background-color: rgb(44, 42, 39);
+        }
+        body {
+            background-color: rgb(67, 115, 139);
+            align-self: auto;
+        }
+        
+    </style>
+</head>
+<body>
+    <h2 style="text-align: left;">FORMULÁRIO HTML II - PADRÕES WEB</h2>
+    
+    <div id="pessoais">
+    <form action="/action_page.php" target="_self" method="post" autocomplete="on">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <label for="fname">Nome</label>
+            <input type="text" id="fname" name="fname" value=""><br><br>
+            <label for="diaa">Data de nascimento:</label>
+            <input type="date" id="diaa" name="diaa"><br><br>
+            <label for="fname">E-mail:</label>
+            <input type="text" id="fname" name="fname" value="" placeholder="digite seu e-mail aqui"><br><br>
+            <label for="fname">Telefone</label>
+            <input type="text" id="fname" name="fname" value=""><br><br>
+                    
+        </fieldset>
+    </div>
+
+        <div id="academicos">
+        <form action="/action_page.php" target="_self" method="post" autocomplete="on">
+            <fieldset>
+                <legend>Dados acadêmicos</legend>
+                <label for="curso">Curso</label>
+                    <select name="curso" id="curso">
+                        <option value="ads">ADS</option>
+                        <option value="java">JAVA</option>
+                        <option value="HTML">HTML</option>
+                    </select><br><br>
+                
+                <legend id="semestre">Semestre:</legend>
+                <input id="semestre" type="radio" id="sem" name="sem" value="1º">
+                <label id="semestre" for="sem">1º</label>
+                <input id="semestre" type="radio" id="sem" name="sem" value="2º">
+                <label id="semestre" for="sem">2º</label>
+                <input id="semestre" type="radio" id="sem" name="sem" value="3º">
+                <label id="semestre" for="sem">3º</label>
+                <input id="semestre" type="radio" id="sem" name="sem" value="4º">
+                <label id="semestre" for="sem">4º</label><br><br>
+            </fieldset>
+        </div>
+        
+        <div>
+            <fieldset>
+                <legend>Experiência Profissional</legend>
+                <label id="trab" for="trab">Trabalha?</label>
+                <input id="trab" type="checkbox" id="trab" name="trab" value=""><br><br>
+                <label for="fname">Local de trabalho:</label>
+                <input type="text" id="fname" name="fname" value=""><br><br>
+
+                <textarea name="message" rows="10" cols="63" placeholder="Descreva sua experiência"></textarea>
+            </fieldset>
+        </div>
+        
+        <button class="button" type="submit" onclick="Gravar">Gravar</button>
+        <button class="button" type="reset" onclick="Limpar">Limpar</button>    
+    </form>
+    <br><br>
+    <a href="index.html"><img src="voltar.png" alt="voltar" width="30" height="30"></a></a>
+    
+</body>
+</html>
